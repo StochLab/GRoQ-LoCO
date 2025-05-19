@@ -273,32 +273,6 @@
 </section>
 
 
-<!--<section class="hero">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container is-max-desktop">    -->
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column" style="padding-bottom: 3%">-->
-<!--          <h2 class="title is-3"> Results </h2>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column is-four-fifths">-->
-<!--        &lt;!&ndash; Add some padding between images &ndash;&gt;-->
-<!--        <img src="images/Main.png" alt="PIP-Loco Main" width="40%" style="padding-right: 5%">-->
-<!--        <img src="images/Deployment.png" alt="PIP-Loco Deployment" width="35%" style="padding-left: 5%">-->
-<!--&lt;!&ndash;        <img src="images/Alg1.png" alt="PIP-Loco Alg1" width="75%" style="padding-top: 5%">&ndash;&gt;-->
-<!--        <div class="content has-text-justified" style="padding-top: 5%">-->
-<!--          <p>-->
-<!--            The Dreamer module solves an infinite-horizon MPC problem to generate actions for the robot, ensuring robust constraint handling and adaptive locomotion across terrains. -->
-<!--            See the paper for more details on the algorithm.-->
-<!--          </p>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
 <!--  <section class="hero">-->
 <!--  <div class="hero-body">-->
 <!--    <div class="container is-max-desktop">-->
@@ -332,45 +306,54 @@
 <!--  </div>-->
 <!--</section>-->
 
-  <div class="columns is-centered has-text-centered">
-  <div class="column is-four-fifths">
-    <div class="columns is-mobile is-centered">
-      <div class="column is-half">
-        <figure>
-          <img src="images/results/stair_expts.png" alt="GROQ-Loco Stair Traversal" style="width: 70%;">
-          <figcaption style="font-size: 0.9em; margin-top: 0.5em;">
-            Table 1: Evaluation on stair environments with increasing difficulty (13–29 cm step heights)
-          </figcaption>
-        </figure>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column" style="padding-bottom: 3%">
+          <h2 class="title is-3"> Experiments </h2>
+        </div>
       </div>
-      <div class="column is-half">
-        <figure>
-          <img src="images/results/slope_expts.png" alt="GROQ-Loco Slope Generalization" style="width: 50%;">
-          <figcaption style="font-size: 0.9em; margin-top: 0.5em;">
-            Table 2: Zero-shot generalization to sloped terrain on diverse quadruped platforms.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
 
-    <div class="content has-text-justified" style="padding-top: 5%">
-      <p>
-        We evaluate our generalist policy across five settings, spanning multiple quadruped robots and terrain types—flat ground, stairs, and slopes—with data sparsely distributed across this space.
-        <br><br>
-        <b>Zero-Shot Skill and Robot Transfer.</b> Our policy generalizes to unseen robot morphologies and terrains without any fine-tuning, demonstrating effective knowledge transfer. Robots not seen during training successfully walk, climb stairs, and traverse slopes in a zero-shot setting.
-        <br><br>
-        <b>Out-of-Distribution Generalization.</b> Despite training only on stairs up to 17 cm step height, policies succeed on both smooth and irregular inclines up to 40° and on unseen stair geometries beyond the training range, showing emergent base stabilization and terrain adaptation.
-        <br><br>
-        <b>Cross-Robot Skill Sharing.</b> Robots that only contributed flat-terrain data exhibit robust stair traversal. This highlights effective generalization enabled by shared locomotion structure.
-        <br><br>
-        <b>Real-World Deployment Without Tuning.</b> Policies trained entirely in simulation are deployed directly on hardware (Go1, Stoch5), demonstrating successful flat, stair, and slope traversal in real-world conditions.
-        <br><br>
-        Check out our paper for more details.
-      </p>
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;">
+            <figure style="width: 50%;">
+              <img src="images/results/stair_expts.png" alt="Stair Experiments" style="width: 100%;">
+              <figcaption style="font-size: 0.9em; padding-top: 0.5em;">
+                Table 1: Evaluation on stair environments with increasing difficulty (13–29 cm step heights).
+              </figcaption>
+            </figure>
+
+            <figure style="width: 46%;">
+              <img src="images/results/slope_expts.png" alt="Slope Experiments" style="width: 100%;">
+              <figcaption style="font-size: 0.9em; padding-top: 0.5em;">
+                Table 2: Zero-shot slope traversal results.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="content has-text-justified" style="padding-top: 5%">
+            <p>
+              We evaluate our generalist policy across five settings, spanning multiple quadruped robots and terrain types—flat ground, stairs, and slopes—with data sparsely distributed across this space.
+              <br><br>
+              <b>Zero-Shot Skill and Robot Transfer.</b> Our policy generalizes to unseen robot morphologies and terrains without any fine-tuning, demonstrating effective knowledge transfer. Robots not seen during training successfully walk, climb stairs, and traverse slopes in a zero-shot setting.
+              <br><br>
+              <b>Out-of-Distribution Generalization.</b> Despite training only on stairs up to 17 cm step height, policies succeed on both smooth and irregular inclines up to 40° and on unseen stair geometries beyond the training range, showing emergent base stabilization and terrain adaptation.
+              <br><br>
+              <b>Cross-Robot Skill Sharing.</b> Robots that only contributed flat-terrain data exhibit robust stair traversal. This highlights effective generalization enabled by shared locomotion structure.
+              <br><br>
+              <b>Real-World Deployment Without Tuning.</b> Policies trained entirely in simulation are deployed directly on hardware (Go1, Stoch5), demonstrating successful flat, stair, and slope traversal in real-world conditions.
+              <br><br>
+              Check out our paper for more details.
+            </p>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
+</section>
 
 
 <section class="hero is-light">
