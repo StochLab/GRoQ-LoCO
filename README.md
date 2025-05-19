@@ -1,3 +1,2 @@
-### PIP-Loco: A Proprioceptive Infinite-Horizon Planning Framework for Quadrupedal Robot Locomotion
+### GROQLoco: Generalist and RObot-agnostic Quadruped Locomotion Control using Offline Datasets
 
-We’re planning to merge the code with our extended work. Stay tuned!
