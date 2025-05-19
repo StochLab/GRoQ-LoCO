@@ -294,11 +294,11 @@
             <p>
               We evaluate our generalist policy across five settings, spanning multiple quadruped robots and terrain types—flat ground, stairs, and slopes—with data sparsely distributed across this space.
               <br><br>
-              <b>Zero-Shot Skill and Robot Transfer.</b> Our policy handles unseen robots and terrains without fine-tuning. For example, it enables a robot to climb stairs or traverse slopes—even when that robot or terrain was never seen during training.
+              <b>Zero-Shot Skill and Robot Transfer.</b> Our policy generalizes to unseen robot morphologies and terrains without any fine-tuning, demonstrating effective knowledge transfer. Robots not seen during training successfully walk, climb stairs, and traverse slopes in a zero-shot setting.
               <br><br>
-              <b>Out-of-Distribution Generalization.</b> Despite training only on slopes and stairs up to 17 cm step height, policies succeed on both smooth and irregular inclines up to 40° and on unseen stair geometries beyond the training range, showing emergent base stabilization and terrain adaptation.
+              <b>Out-of-Distribution Generalization.</b> Despite training only on stairs up to 17 cm step height, policies succeed on both smooth and irregular inclines up to 40° and on unseen stair geometries beyond the training range, showing emergent base stabilization and terrain adaptation.
               <br><br>
-              <b>Cross-Robot Skill Sharing.</b> Robots trained solely on flat terrain exhibit robust stair and slope behaviors; those never exposed to stairs outperform stair-specialized models, indicating strong generalization through shared structure.
+              <b>Cross-Robot Skill Sharing.</b> Robots that only contributed flat-terrain data exhibit robust stair traversal. This highlights effective generalization enabled by shared locomotion structure.
               <br><br>
               <b>Real-World Deployment Without Tuning.</b> Policies trained entirely in simulation are deployed directly on hardware (Go1, Stoch5), demonstrating successful flat, stair, and slope traversal in real-world conditions.
 
