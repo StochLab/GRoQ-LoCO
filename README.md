@@ -1,1 +1,1 @@
-### GROQLoco: Generalist and RObot-agnostic Quadruped Locomotion Control using Offline Datasets
+### GRoQ-Loco: Generalist and Robot-agnostic Quadruped Locomotion Control using Offline Datasets
